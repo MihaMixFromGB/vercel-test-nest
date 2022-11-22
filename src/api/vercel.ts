@@ -10,7 +10,8 @@ async function bootstrap() {
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('pug');
 
-  return app;
+  await app.listen(3000);
+  // return app;
 }
-
-module.exports = bootstrap();
+bootstrap();
+// module.exports = bootstrap();
