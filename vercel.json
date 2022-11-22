@@ -10,5 +10,6 @@
         "api/vercel.ts": {
           "includeFiles": "views/**"
         }
-    }
+    },
+    "outputDirectory": "public"
 }
