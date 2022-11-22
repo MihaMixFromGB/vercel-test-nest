@@ -11,5 +11,10 @@
             "src": "/(.*)",
             "dest": "api/vercel.ts"
         }
-    ]
+    ],
+    "functions": {
+        "api/vercel.ts": {
+          "includeFiles": "views/**"
+        }
+      }
 }
