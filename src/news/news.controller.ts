@@ -6,6 +6,6 @@ export class NewsController {
   @Get()
   // @Render('index')
   async get() {
-    return readdirSync('./');
+    return readdirSync('./src');
   }
 }

@@ -2,10 +2,6 @@
     "version": 2,
     "builds": [
         {
-            "src": "views/**",
-            "use": "@vercel/static"
-        },
-        {
             "src": "api/vercel.ts",
             "use": "@now/node"
         }
