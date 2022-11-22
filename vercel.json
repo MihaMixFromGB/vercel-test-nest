@@ -16,5 +16,5 @@
         "api/vercel.ts": {
           "includeFiles": "views/**"
         }
-      }
+    }
 }
