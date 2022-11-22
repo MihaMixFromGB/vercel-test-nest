@@ -11,5 +11,5 @@
           "includeFiles": "views/**"
         }
     },
-    "outputDirectory": "public"
+    "outputDirectory": "dist"
 }
