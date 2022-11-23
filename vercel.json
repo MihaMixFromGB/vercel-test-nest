@@ -3,11 +3,11 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "vercel/main.ts"
+            "dest": "api/vercel.ts"
         }
     ],
     "functions": {
-        "vercel/main.ts": {
+        "api/vercel.ts": {
           "includeFiles": "assets/swagger-ui-dist/**"
         }
     },
