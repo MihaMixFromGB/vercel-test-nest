@@ -8,7 +8,7 @@ import { AppModule } from '../src/app.module';
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  app.useStaticAssets(join(__dirname, '..', 'assets/swagger-ui-dist/'), {
+  app.useStaticAssets(join(__dirname, 'assets/swagger-ui-dist/'), {
     prefix: '/api',
   });
   app.engine('pug', pug.__express);
