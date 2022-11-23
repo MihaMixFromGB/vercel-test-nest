@@ -16,7 +16,7 @@ async function bootstrap() {
   app.setViewEngine('pug');
 
   const config = new DocumentBuilder()
-    .setTitle('Cats example')
+    .setTitle('Cats example ')
     .setDescription('The cats API description')
     .setVersion('1.0')
     .addTag('cats')
