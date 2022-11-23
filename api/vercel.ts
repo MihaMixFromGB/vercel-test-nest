@@ -8,9 +8,9 @@ import { AppModule } from '../src/app.module';
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  app.useStaticAssets(join(__dirname, '..', 'assets/swagger-ui-dist/'), {
-    prefix: '/swagger',
-  });
+  // app.useStaticAssets(join(__dirname, '..', 'assets/swagger-ui-dist/'), {
+  //   prefix: '/swagger',
+  // });
   app.engine('pug', pug.__express);
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('pug');
