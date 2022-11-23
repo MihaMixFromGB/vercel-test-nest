@@ -8,7 +8,7 @@
     ],
     "functions": {
         "api/vercel.ts": {
-          "includeFiles": ["views/**", "assets/swagger-ui-dist/**"]
+          "includeFiles": "api/swagger-ui-dist/**"
         }
     },
     "outputDirectory": "dist"
