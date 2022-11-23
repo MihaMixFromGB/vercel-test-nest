@@ -3,7 +3,7 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 import { join } from 'path';
 import pug from 'pug';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-// import swaggerUi from 'swagger-ui-express';
+import swaggerUi from 'swagger-ui-express';
 import { AppModule } from '../src/app.module';
 
 async function bootstrap() {
@@ -23,8 +23,10 @@ async function bootstrap() {
     .addTag('cats')
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
-  // app.use('/api', swaggerUi.serve, swaggerUi.setup(document));
+  // [GET] /api/api/swagger-ui-init.js
+  // This file isn't in 'swagger-ui-dist' folder
+  // SwaggerModule.setup('api', app, document);
+  app.use('/api', swaggerUi.serve, swaggerUi.setup(document));
 
   await app.listen(3000);
   return app;
