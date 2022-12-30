@@ -12,6 +12,9 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, '..', 'assets/swagger-ui-dist/'), {
     prefix: '/api',
   });
+  app.useStaticAssets(join(__dirname, '..', 'assets/images/'), {
+    prefix: '/images',
+  });
   app.engine('pug', pug.__express);
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('pug');
